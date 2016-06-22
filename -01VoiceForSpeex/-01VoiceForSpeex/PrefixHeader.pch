@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  -01VoiceForSpeex
+//
+//  Created by 势必可赢 on 16/6/13.
+//  Copyright © 2016年 势必可赢. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define SAMPLE_RATE     [[NSUserDefaults standardUserDefaults] objectForKey:@"SampleRate"]
+#define CHANNEL         [[NSUserDefaults standardUserDefaults] objectForKey:@"Channel"]
+#define BIT_DEPTH       [[NSUserDefaults standardUserDefaults] objectForKey:@"BitDepth"]
+
+#define Quality_SPX     [[NSUserDefaults standardUserDefaults] objectForKey:@"Quality_SPX"]
+#define BroadBand_TYPE  [[NSUserDefaults standardUserDefaults] objectForKey:@"BroadBand_TYPE"]
+
+#define FRAME_SIZE      [[NSUserDefaults standardUserDefaults] objectForKey:@"FRAME_SIZE"]
+#define PATH_OF_DOCUMENT    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
+#endif /* PrefixHeader_pch */
